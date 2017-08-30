@@ -84,5 +84,5 @@ message BeyondConfig {
 
 
 message BeyondConfigAry {
-    repeated BeyondAry ary = 1;
+    repeated BeyondConfig ary = 1;
 }
