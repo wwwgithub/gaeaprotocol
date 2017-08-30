@@ -54,3 +54,25 @@ message DemoConfigAry {
     repeated DemoConfig ary = 1;
 }
 
+//道具类型
+enum PropsEnum {
+    propsDefault    = 0;
+    tongjiling      = 1;      
+    fish            = 2;        
+    heart           = 3;       
+    speaker         = 4;     
+    summon          = 5;      
+    miniShield      = 6;      
+    powPic          = 7;      
+    broken          = 8;      
+    dungeongun      = 9;      
+    vip             = 10;     
+    magicBottle     = 11;     
+    snowBall        = 12;        
+    mercy           = 13;       
+    police          = 14;      
+    umbrella        = 15;        
+    tili            = 16;        
+    money           = 17;       
+}
+
