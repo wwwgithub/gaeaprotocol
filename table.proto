@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package aladinfun.island.proto;
+
+message EnumItem {
+    string Name = 1;
+    uint32 Value = 2;
+}
+
+message EnumConfig {
+    string EnumTypeName = 1;
+    repeated EnumItem EnumItemAry = 2;
+}
+
+message EnumConfigAry {
+    repeated EnumConfig ary = 1;
+}
+
+// 奖励类型
+enum PriceEnum {
+    // [奖励类型]无
+    PriceDefault = 0;
+
+    // [奖励类型]钻石
+    PriceDiamond = 1;
+}
+
+// 个人类型
+enum PersonEnum {
+    // [个人类型]无
+    PersonDefault = 0;
+
+    // [个人类型]钻石
+    PersonDiamond = 1;
+}
+
+message IntArr {
+    repeated uint32 List = 1;
+}
+
+message Common {
+    PersonEnum PersonType = 1;
+}
+
+message DemoConfig {
+    uint32 A = 1;
+    repeated uint32 B = 2;
+    IntArr C = 3;
+    PriceEnum D = 4;
+    Common E = 5;
+}
+
+message DemoConfigAry {
+    repeated DemoConfig ary = 1;
+}
+
