@@ -83,6 +83,6 @@ message BeyondConfig {
 }
 
 
-message BeyondAry {
+message BeyondConfigAry {
     repeated BeyondAry ary = 1;
 }
