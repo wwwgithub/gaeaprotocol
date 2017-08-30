@@ -54,25 +54,35 @@ message DemoConfigAry {
     repeated DemoConfig ary = 1;
 }
 
-//道具类型
-enum PropsEnum {
-    propsDefault    = 0;
-    tongjiling      = 1;      
-    fish            = 2;        
-    heart           = 3;       
-    speaker         = 4;     
-    summon          = 5;      
-    miniShield      = 6;      
-    powPic          = 7;      
-    broken          = 8;      
-    dungeongun      = 9;      
-    vip             = 10;     
-    magicBottle     = 11;     
-    snowBall        = 12;        
-    mercy           = 13;       
-    police          = 14;      
-    umbrella        = 15;        
-    tili            = 16;        
-    money           = 17;       
+
+message Props {
+    uint32 tongjiling   = 1;
+    uint32 fish         = 2;
+    uint32 heart        = 3;
+    uint32 speaker      = 4;
+    uint32 summon       = 5;
+    uint32 miniShield   = 6;
+    uint32 powPic       = 7;
+    uint32 broken       = 8;
+    uint32 dungeongun   = 9;
+    uint32 vip          = 10;
+    uint32 magicBottle  = 11;
+    uint32 snowBall     = 12;
+    uint32 mercy        = 13;
+    uint32 police       = 14;
+    uint32 umbrella     = 15;
+    uint32 tili         = 16;
+    uint32 money        = 17;
+    uint32 diamond      = 18;
 }
 
+
+message BeyondConfig {
+    uint32  star = 1;
+    Props   reward = 2;
+}
+
+
+message BeyondAry {
+    repeated BeyondAry ary = 1;
+}
