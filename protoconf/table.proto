@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package aladinfun.island.proto;
+
 
 message EnumItem {
     string Name = 1;
@@ -84,5 +84,33 @@ message BeyondConfig {
 
 
 message BeyondConfigAry {
-    required BeyondConfig ary = 1;
+    repeated BeyondConfig ary = 1;
 }
+
+
+message RewardRange {
+    uint32 min = 1;
+    uint32 max = 2;
+}
+
+message DinnerRewardRate {
+    uint32 rate = 1;
+    string name = 2;
+    uint32 num = 3;
+}
+
+
+message DinnerRewardConfig {
+    RewardRange must = 1;
+    uint32 max = 2;
+    repeated  DinnerRewardRate props = 3;
+    uint32 num = 4;
+}
+
+message DinnerRewardConfigAry {
+    repeated DinnerRewardConfig ary = 1;
+}
+
+
+
+
