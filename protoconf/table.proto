@@ -99,16 +99,21 @@ message DinnerRewardRate {
     uint32 num = 3;
 }
 
+message mustItem {
+    RewardRange money= 1;
+    RewardRange tili = 2;
+}
+
 
 message DinnerRewardConfig {
-    RewardRange must = 1;
+    repeated mustItem must = 1;
     uint32 max = 2;
     repeated  DinnerRewardRate props = 3;
     uint32 num = 4;
 }
 
 message DinnerRewardConfigAry {
-    repeated DinnerRewardConfig ary = 1;
+    repeated DinnerRewardConfig  ary = 1;
 }
 
 
