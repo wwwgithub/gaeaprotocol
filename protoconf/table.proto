@@ -123,24 +123,24 @@ message DinnerRewardConfigAry {
 
 
 
-
 //  每日任务
-message DailyBounsItem {
+message LoginRewardItem {
     uint32 num = 1;
     uint32 img = 2;
 }
 
-message DailyBounsSubArr {
+message LoginRewardArr {
     string reward = 1;
     DailyBounsItem value = 2;
+	uint32 key = 3;
 }
 
-message DailyBounsConfig {
+message LoginRewardConfig {
     repeated DailyBounsSubArr visitor = 1;
     repeated  DailyBounsSubArr fb = 2;
 }
 
-message DailyBounsConfigAry {
+message LoginRewardConfigAry {
     repeated DailyBounsConfig ary = 1;
 }
 
