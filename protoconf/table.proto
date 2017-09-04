@@ -104,12 +104,16 @@ message mustItem {
     RewardRange tili = 2;
 }
 
-
-message DinnerRewardConfig {
+message DinnerItem {
     repeated mustItem must = 1;
     uint32 max = 2;
     repeated  DinnerRewardRate props = 3;
     uint32 num = 4;
+    uint32 index = 5;
+}
+
+message DinnerRewardConfig {
+    repeated DinnerItem reward = 1;
 }
 
 message DinnerRewardConfigAry {
