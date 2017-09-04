@@ -131,17 +131,17 @@ message LoginRewardItem {
 
 message LoginRewardArr {
     string reward = 1;
-    DailyBounsItem value = 2;
+    LoginRewardItem value = 2;
 	uint32 key = 3;
 }
 
 message LoginRewardConfig {
-    repeated DailyBounsSubArr visitor = 1;
-    repeated  DailyBounsSubArr fb = 2;
+    repeated LoginRewardArr first = 1; //第一轮的奖励，奖励比较丰富
+	repeated LoginRewardArr second = 2;//第二轮及以后的奖励，相对较少
 }
 
 message LoginRewardConfigAry {
-    repeated DailyBounsConfig ary = 1;
+    repeated LoginRewardConfig ary = 1;
 }
 
 
