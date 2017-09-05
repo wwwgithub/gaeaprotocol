@@ -205,7 +205,7 @@ message BabyRewardItem {
 
 //风铃产出宝贝概率
 message BabyProductConfigAry {
-    repeated PicProductConfig ary = 1;
+    repeated BabyProductConfig ary = 1;
 }
 
 message BabyProductConfig {
