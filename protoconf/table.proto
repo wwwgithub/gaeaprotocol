@@ -163,6 +163,16 @@ message GiftBoxConfigAry{
 }
 
 
+message TestConfig {
+	uint32 num = 1;
+	string value = 2;
+}
+
+message TestConfigAry {
+	repeated TestConfig ary = 1;
+}
+
+
 
 
 //弹弓活动普通配置 
