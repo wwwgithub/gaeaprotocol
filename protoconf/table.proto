@@ -145,7 +145,7 @@ message LoginRewardConfigAry {
 }
 
   
-// ******************  弹弓活动(开始) *************************
+
 message GiftBoxRewardItem {
     string key = 1;
     uint64 value = 2;
@@ -161,9 +161,6 @@ message GiftBoxConfig {
 message GiftBoxConfigAry{
     repeated GiftBoxConfig ary = 1;
 }
-
-
-
 
 
 //弹弓活动普通配置 
@@ -236,7 +233,6 @@ message GiftBoxConfigAry{
 
 
 
-// ******************  弹弓活动(结束) *************************
 
 
 
