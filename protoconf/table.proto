@@ -87,41 +87,50 @@ message BeyondConfigAry {
     repeated BeyondConfig ary = 1;
 }
 
+/*************** 家族奖励 (开始) *****************/
 
-message RewardRange {
-    uint32 min = 1;
-    uint32 max = 2;
+//食材与家族大餐等级的关系
+message DinnerLevelConfig {
+    uint32 key = 1;
+    uint32 aftEnergy = 2;
+    uint32 goodMood = 3;
+    uint32 seasoning = 4;
 }
 
-message DinnerRewardRate {
+message dinnerLevelConfigAry {
+    repeated DinnerLevelConfig ary = 1;
+}
+
+
+//家族大餐对应奖励
+message MustReward {
+    string reward = 1;
+    uint32 max = 2;
+    uint32 min = 3;
+}
+
+//可选奖励
+message PropsReward {
     uint32 rate = 1;
     string name = 2;
-    uint32 num = 3;
-}
-
-message mustItem {
-    RewardRange money= 1;
-    RewardRange tili = 2;
-}
-
-message DinnerItem {
-    repeated mustItem must = 1;
-    uint32 max = 2;
-    repeated  DinnerRewardRate props = 3;
-    uint32 num = 4;
-    uint32 index = 5;
+    uint32 num = 10;
 }
 
 message DinnerRewardConfig {
-    repeated DinnerItem reward = 1;
+    MustReward must = 1;
+    repeated PropsReward props = 2;
+    uint32 num = 3;
+    uint32 max = 4;
 }
+
 
 message DinnerRewardConfigAry {
-    repeated DinnerRewardConfig  ary = 1;
+    repeated DinnerRewardConfig ary = 1;
 }
 
 
 
+/*************** 家族奖励 (结束) *****************/
 
 /*************** 每日登入 (开始) *****************/
 message LoginRewardItem {
