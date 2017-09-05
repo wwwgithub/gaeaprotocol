@@ -127,12 +127,12 @@ message DinnerRewardConfigAry {
 message LoginRewardItem {
     uint32 num = 1;
     uint32 img = 2;
+	string reward = 3;
 }
 
 message LoginRewardArr {
-    string reward = 1;
-    LoginRewardItem value = 2;
-	uint32 key = 3;
+    repeated LoginRewardItem value = 1;
+	uint32 key = 2;
 }
 
 message LoginRewardConfig {
@@ -144,12 +144,102 @@ message LoginRewardConfigAry {
     repeated LoginRewardConfig ary = 1;
 }
 
+  
+// ******************  弹弓活动(开始) *************************
+message GiftBoxRewardItem {
+    string key = 1;
+    uint64 value = 2;
+}
+
+
+message GiftBoxConfig {
+    uint32 gift_box = 1;
+    uint32 gift_box_v1 = 2;
+}
+
+
+message GiftBoxConfigAry{
+    repeated GiftBoxConfig ary = 1;
+}
+
+
+
+message GiftBoxRate {
+    uint32 gift_box_reward = 1;
+    uint32 pic_product = 2;
+}
+
+//弹弓活动普通配置 
+message SlingshotConfig {
+    uint32 recover = 1;
+    uint32 reserved = 2;
+    uint32 magic_bottle = 3;
+    uint64 ball_get = 4;
+    uint32 bottle_num = 5;
+    uint32 receive_limit = 6;
+    uint32 send_limit = 7;
+	uint32 ball_get_energy = 8;
+    GiftBoxRate gift_box_rate = 9;
+}
+
+message SlingshotConfigArg {
+	repeated SlingshotConfig ary = 1; 
+}
+
+
+//打中风铃的奖励
+message GiftBoxRewardItem {
+    string key = 1;
+    uint64 value = 2;
+}
+
+
+message GiftBoxRewardConfig {
+    uint32 rate = 1;
+    GiftBoxRewardItem rewards = 2;
+}
+
+
+message GiftBoxRewardConfigAry {
+    repeated GiftBoxRewardConfig ary = 1;
+}
+
+//碎片兑换奖励
+message BabyRewardConfig {
+    string index = 1;
+    repeated BabyRewardItem rewards = 2;
+}
+
+message BabyRewardItem {
+    string index = 1;
+    uint32 value = 2;
+}
+
+//风铃产出宝贝概率
+message BabyProductConfigAry {
+    repeated PicProductConfig ary = 1;
+}
+
+message BabyProductConfig {
+    uint32 mine = 1;
+    uint32 friend = 2;
+}
+
+
+//风铃刷新，个数概率
+message GiftBoxConfig {
+    uint32 gift_box = 1;
+    uint32 gift_box_v1 = 2;
+}
+
+message GiftBoxConfigAry{
+    repeated GiftBoxConfig ary = 1;
+}
 
 
 
 
-
-
+// ******************  弹弓活动(结束) *************************
 
 
 
