@@ -214,7 +214,7 @@ message BabyProductConfig {
 
 //风铃刷新，个数概率
 message GiftBoxConfig {
-    uint32 gift_box = 1;
+    uint32 giftBox = 1;
 }
 
 message GiftBoxConfigAry{
