@@ -145,29 +145,23 @@ message LoginRewardConfigAry {
 }
  
 
-
-
-
-message TestConfig {
-	uint32 num = 1;
-	string value = 2;
-}
-
-message TestConfigAry {
-	repeated TestConfig ary = 1;
-}
-
+/*************** 弹弓活动(开始) *****************/
 
 //弹弓活动普通配置 
 message SlingshotConfig {
     uint32 recover = 1;
     uint32 reserved = 2;
     uint32 magic_bottle = 3;
-    uint64 ball_get = 4;
-    uint32 bottle_num = 5;
-    uint32 receive_limit = 6;
-    uint32 send_limit = 7;
-	uint32 ball_get_energy = 8;
+    uint32 bottle_num = 4;
+    uint32 receive_limit = 5;
+    uint32 send_limit = 6;
+	uint32 ball_get_energy = 7;
+    GiftBoxRate gift_box_rate = 8;
+}
+
+message GiftBoxRate {
+    uint32 gift_box_reward = 1;
+    uint32 baby_product = 2;
 }
 
 message SlingshotConfigAry {
@@ -224,7 +218,7 @@ message GiftBoxConfigAry{
     repeated GiftBoxConfig ary = 1;
 }
 
-
+/*************** 弹弓活动(结束) *****************/
 
 
 
