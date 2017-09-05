@@ -173,7 +173,6 @@ message SlingshotConfig {
     uint32 receive_limit = 6;
     uint32 send_limit = 7;
 	uint32 ball_get_energy = 8;
-   
 }
 
 message SlingshotConfigArg {
