@@ -163,6 +163,8 @@ message GiftBoxConfigAry{
 }
 
 
+
+
 //弹弓活动普通配置 
 message SlingshotConfig {
     uint32 recover = 1;
@@ -175,7 +177,7 @@ message SlingshotConfig {
 	uint32 ball_get_energy = 8;
 }
 
-message SlingshotConfigArg {
+message SlingshotConfigAry {
 	repeated SlingshotConfig ary = 1; 
 }
 
