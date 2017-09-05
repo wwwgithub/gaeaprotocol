@@ -157,6 +157,7 @@ message SlingshotConfig {
     uint32 sendLimit = 6;
 	uint32 ballGetEnergy = 7;
     GiftBoxRate giftBoxRate = 8;
+    uint32 ballGet = 9;
 }
 
 message GiftBoxRate {
