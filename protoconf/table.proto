@@ -225,8 +225,8 @@ message BallMoneyConfig {
     uint32 value = 3;
 }
 
-message BallMoneyConfigArg {
-    repeated BallMoneyConfig arg = 1;
+message BallMoneyConfigAry {
+    repeated BallMoneyConfig ary = 1;
 }
 
 
