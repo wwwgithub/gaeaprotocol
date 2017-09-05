@@ -166,7 +166,7 @@ message GiftBoxConfigAry{
 
 message GiftBoxRate {
     uint32 gift_box_reward = 1;
-    uint32 pic_product = 2;
+    uint32 baby_product = 2;
 }
 
 //弹弓活动普通配置 
