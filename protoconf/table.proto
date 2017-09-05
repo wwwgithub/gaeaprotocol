@@ -219,10 +219,14 @@ message GiftBoxConfigAry{
 }
 
 //获得小鸟的金币消耗
-message BallMoneyConfig{
+message BallMoneyConfig {
     uint32 start = 1;
     uint32 end = 2;
     uint32 value = 3;
+}
+
+message BallMoneyConfigArg {
+    repeated BallMoneyConfig arg = 1;
 }
 
 
