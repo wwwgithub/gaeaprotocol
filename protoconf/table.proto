@@ -143,24 +143,9 @@ message LoginRewardConfig {
 message LoginRewardConfigAry {
     repeated LoginRewardConfig ary = 1;
 }
-
-  
-
-message GiftBoxRewardItem {
-    string key = 1;
-    uint64 value = 2;
-}
+ 
 
 
-message GiftBoxConfig {
-    uint32 gift_box = 1;
-    uint32 gift_box_v1 = 2;
-}
-
-
-message GiftBoxConfigAry{
-    repeated GiftBoxConfig ary = 1;
-}
 
 
 message TestConfig {
@@ -171,8 +156,6 @@ message TestConfig {
 message TestConfigAry {
 	repeated TestConfig ary = 1;
 }
-
-
 
 
 //弹弓活动普通配置 
