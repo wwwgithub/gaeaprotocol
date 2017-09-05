@@ -151,17 +151,17 @@ message LoginRewardConfigAry {
 message SlingshotConfig {
     uint32 recover = 1;
     uint32 reserved = 2;
-    uint32 magic_bottle = 3;
-    uint32 bottle_num = 4;
-    uint32 receive_limit = 5;
-    uint32 send_limit = 6;
-	uint32 ball_get_energy = 7;
-    GiftBoxRate gift_box_rate = 8;
+    uint32 magicBottle = 3;
+    uint32 bottleNum = 4;
+    uint32 receiveLimit = 5;
+    uint32 sendLimit = 6;
+	uint32 ballGetEnergy = 7;
+    GiftBoxRate giftBoxRate = 8;
 }
 
 message GiftBoxRate {
-    uint32 gift_box_reward = 1;
-    uint32 baby_product = 2;
+    uint32 giftBoxReward = 1;
+    uint32 babyProduct = 2;
 }
 
 message SlingshotConfigAry {
