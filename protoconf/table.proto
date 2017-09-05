@@ -197,6 +197,10 @@ message BabyRewardItem {
     uint32 value = 2;
 }
 
+message BabyRewardConfigAry {
+    repeated BabyRewardConfig ary = 1;
+}
+
 //风铃产出宝贝概率
 message BabyProductConfigAry {
     repeated BabyProductConfig ary = 1;
