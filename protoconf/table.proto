@@ -164,10 +164,7 @@ message GiftBoxConfigAry{
 
 
 
-message GiftBoxRate {
-    uint32 gift_box_reward = 1;
-    uint32 baby_product = 2;
-}
+
 
 //弹弓活动普通配置 
 message SlingshotConfig {
@@ -179,7 +176,7 @@ message SlingshotConfig {
     uint32 receive_limit = 6;
     uint32 send_limit = 7;
 	uint32 ball_get_energy = 8;
-    GiftBoxRate gift_box_rate = 9;
+   
 }
 
 message SlingshotConfigArg {
