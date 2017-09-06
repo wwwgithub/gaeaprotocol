@@ -287,10 +287,31 @@ message BoomConfigAry {
 
 /*************** 弹弓活动(结束) *****************/
 
+/*************** 在线抽奖(开始) *****************/
+message RewardTypeConfig {
+    uint32 key = 1;
+    string reward = 2;
+    uint32 pic  = 3;
+}
 
+message RewardTypeConfigAry {
+    repeated RewardTypeConfig ary = 1;
+}
 
+//随机
+message OlActItem {
+    string reward = 1;
+    uint32 value = 2;
+}
 
+message OlActRandConfig {
+    uint32 key = 1;
+    repeated uint32 rate = 2;
+    OlActItem reward =3;
+}
 
+message OlActRandConfigAry {
+    repeated OlActRandConfig ary = 1;
+}
 
-
-
+/*************** 在线抽奖(结束) *****************/
