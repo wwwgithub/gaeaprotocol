@@ -314,4 +314,12 @@ message OlActRandConfigAry {
     repeated OlActRandConfig ary = 1;
 }
 
+message OlineTimeConfig {
+    uint32 randTotal = 1;
+}
+
+message OlineTimeConfigAry {
+    repeated OlineTimeConfig ary = 1;
+}
+
 /*************** 在线抽奖(结束) *****************/
