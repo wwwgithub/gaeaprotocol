@@ -311,3 +311,20 @@ message OlineTimeConfigAry {
     repeated OlineTimeConfig ary = 1;
 }
 /*************** 在线抽奖(结束) *****************/
+
+
+/*************** 七天冲星(开始) *****************/
+message StarUpReward  {
+    string name = 1;
+    uint32 value = 2;
+}
+
+message StarUpConfig {
+    uint32 star = 1;
+    repeated StarUpReward reward = 2;
+}
+
+message StarUpConfigAry {
+    repeated StarUpConfig ary = 1;
+}
+/*************** 七天冲星(结束) *****************/
