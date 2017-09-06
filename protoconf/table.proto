@@ -104,34 +104,38 @@ message dinnerLevelConfigAry {
 
 
 //家族大餐对应奖励
-message MustReward {
+message MustRewardConfig {
     string reward = 1;
     uint32 max = 2;
     uint32 min = 3;
+    uint32 level = 4;
 }
 
-
+message MustRewardConfigAry {
+    repeated MustRewardConfig ary = 1;
+}
 
 //可选奖励
-message PropsReward {
+message PropsRewardConfig {
     uint32 rate = 1;
     string name = 2;
-    uint32 num = 10;
+    uint32 num = 5;
+    uint32 level = 4;
 }
 
+message PropsRewardConfigAry {
+    repeated PropsRewardConfigAry ary = 1;
+}
 
 message DinnerRewardConfig {
     uint32 num = 1;
     uint32 max = 2;
     uint32 level = 3;
-    repeated PropsReward props = 4;
-    repeated MustReward must = 5;
 }
 
 message DinnerRewardConfigAry {
     repeated DinnerRewardConfig ary = 1;
 }
-
 /*************** 家族奖励 (结束) *****************/
 
 /*************** 每日登入 (开始) *****************/
