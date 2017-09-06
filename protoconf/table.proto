@@ -124,7 +124,7 @@ message PropsRewardConfig {
 }
 
 message PropsRewardConfigAry {
-    repeated PropsRewardConfigAry ary = 1;
+    repeated PropsRewardConfig ary = 1;
 }
 
 message DinnerRewardConfig {
