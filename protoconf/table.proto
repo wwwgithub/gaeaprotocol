@@ -110,14 +110,6 @@ message MustReward {
     uint32 min = 3;
 }
 
-message MustRewardConfig {
-    uint32 level = 1;
-    repeated MustReward props = 2;
-}
-
-message MustRewardConfigAry {
-    repeated MustRewardConfig ary = 1;
-}
 
 
 //可选奖励
@@ -127,20 +119,13 @@ message PropsReward {
     uint32 num = 10;
 }
 
-message PropsRewardConfig {
-    uint32 level = 1;
-    repeated PropsReward props = 2;
-}
-
-message PropsRewardConfigAry {
-    repeated MustRewardConfig ary = 1;
-}
-
 
 message DinnerRewardConfig {
-    uint32 num = 3;
-    uint32 max = 4;
-    uint32 level = 5;
+    uint32 num = 1;
+    uint32 max = 2;
+    uint32 level = 3;
+    repeated PropsReward props = 4;
+    repeated MustReward must = 5;
 }
 
 message DinnerRewardConfigAry {
@@ -306,7 +291,7 @@ message OlActItem {
 
 message OlActRandConfig {
     uint32 key = 1;
-    repeated uint32 rate = 2;
+    repeated uint32 per = 2;
     OlActItem reward =3;
 }
 
@@ -321,5 +306,4 @@ message OlineTimeConfig {
 message OlineTimeConfigAry {
     repeated OlineTimeConfig ary = 1;
 }
-
 /*************** 在线抽奖(结束) *****************/
