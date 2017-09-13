@@ -296,7 +296,7 @@ message OlActItem {
 message OlActRandConfig {
     uint32 key = 1;
     repeated uint32 per = 2;
-    OlActItem reward =3;
+    OlActItem reward =3;     
 }
 
 message OlActRandConfigAry {
