@@ -90,18 +90,6 @@ message BeyondConfigAry {
 
 /*************** 家族奖励 (开始) *****************/
 
-//食材与家族大餐等级的关系
-message DinnerLevelConfig {
-    uint32 key = 1;
-    uint32 aftEnergy = 2;
-    uint32 goodMood = 3;
-    uint32 seasoning = 4;
-}
-
-message dinnerLevelConfigAry {
-    repeated DinnerLevelConfig ary = 1;
-}
-
 
 //家族大餐对应奖励
 message MustRewardConfig {
@@ -328,3 +316,42 @@ message StarUpConfigAry {
     repeated StarUpConfig ary = 1;
 }
 /*************** 七天冲星(结束) *****************/
+
+
+/*************岛屿管理(开始）************************/
+
+message PlanetTiliItem {
+    uint32 max = 1;
+    uint32 recover = 2;
+    uint32 time = 3;
+}
+
+message PlanetShieldItem {
+    uint32 max = 1;
+}
+
+message PlanetPriceItem {
+    repeated uint32 buildingPrice = 2;
+}
+
+message PlanetItem {
+    PlanetTiliItem tili = 1;
+    PlanetShieldItem shield = 2;
+    uint32 buildingNum = 3;
+    uint32 buildingLength = 4;
+    uint32 maxHP = 5;
+    uint32 repairRate = 6;
+    repeated PlanetPriceItem price = 7;
+    uint32 totalPrice = 8;
+    uint32 handBook = 9;
+    uint32 planetId = 10;
+}
+/*************岛屿管理(结束）************************/
+
+
+
+
+
+
+
+
