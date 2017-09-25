@@ -340,7 +340,7 @@ message PlanetConfig {
     uint32 buildingNum = 3;
     uint32 buildingLength = 4;
     uint32 maxHP = 5;
-    uint32 repairRate = 6;
+    float repairRate = 6;
     repeated PlanetPriceItem price = 7;
     uint32 totalPrice = 8;
     uint32 handBook = 9;
