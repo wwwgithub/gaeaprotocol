@@ -334,7 +334,7 @@ message PlanetPriceItem {
     repeated uint32 buildingPrice = 2;
 }
 
-message PlanetItem {
+message PlanetConfig {
     PlanetTiliItem tili = 1;
     PlanetShieldItem shield = 2;
     uint32 buildingNum = 3;
@@ -346,6 +346,13 @@ message PlanetItem {
     uint32 handBook = 9;
     uint32 planetId = 10;
 }
+
+message PlanetConfigAry {
+    repeated PlanetConfig ary = 1;
+}
+
+
+
 /*************岛屿管理(结束）************************/
 
 
