@@ -378,7 +378,7 @@ message GoPlanetRewardConfig {
     repeated GoPlanetRewardItem reward = 2;
 }
 
-message DaZhuanPanConfigAry {
+message GoPlanetRewardConfigAry {
     repeated GoPlanetRewardConfig ary = 1;
 }
 /*************过岛奖励(结束）************************/
