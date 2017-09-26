@@ -351,12 +351,37 @@ message PlanetConfigAry {
     repeated PlanetConfig ary = 1;
 }
 
+/*************大转盘(开始）************************/
+
+message DaZhuanPanConfig {
+    uint32 handBook = 1;
+    uint32 total = 2;
+    repeated string rand = 3;
+    uint32 planetId = 4;
+}
+
+message DaZhuanPanConfigAry {
+    repeated DaZhuanPanConfig ary = 1;
+}
+/*************大转盘(结束）************************/
 
 
-/*************岛屿管理(结束）************************/
+/*************过岛奖励(开始）************************/
 
+message GoPlanetRewardItem{
+    string index = 1;
+    uint32 value = 2;
+}
 
+message GoPlanetRewardConfig {
+    uint32 planetId = 1;
+    repeated GoPlanetRewardItem reward = 2;
+}
 
+message DaZhuanPanConfigAry {
+    repeated GoPlanetRewardConfig ary = 1;
+}
+/*************过岛奖励(结束）************************/
 
 
 
