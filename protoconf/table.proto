@@ -394,3 +394,37 @@ message InviteRewardConfigAry {
     repeated InviteRewardConfig ary = 1;
 }
 /*************发送邀请奖励(结束）************************/
+
+
+/*************召回推送(开始）************************/
+message BackPushRewardItem {
+    string index = 1;
+    uint32 value = 2;
+}
+
+message BackPushRewardConfig {
+    uint32 id = 1;
+    repeated BackPushRewardItem reward = 2;
+    string reward_type = 3;
+}
+
+message BackPushRewardConfigAry {
+    repeated BackPushRewardItem ary = 1;
+}
+
+message BackPushContentItem {
+    string lang = 1;
+    repeated string word = 2;
+}
+
+message BackPushCondition {
+    string field = 1;
+    string condition = 2;
+    string value = 3;
+}
+
+message BackPushContentConfig {
+    repeated BackPushContentItem content = 1;
+    repeated BackPushCondition condition = 2;
+}
+/*************召回推送(结束）************************/
