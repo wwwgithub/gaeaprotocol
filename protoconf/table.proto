@@ -412,19 +412,31 @@ message BackPushRewardConfigAry {
     repeated BackPushRewardItem ary = 1;
 }
 
-message BackPushContentItem {
+message BackPushContentConfig {
     string lang = 1;
     repeated string word = 2;
+    uint32 id = 3;
 }
 
-message BackPushCondition {
+message BackPushContentConfigAry {
+    repeated BackPushContentConfig ary = 1;
+}
+
+message BackPushConditionItem {
     string field = 1;
     string condition = 2;
     string value = 3;
 }
 
-message BackPushContentConfig {
-    repeated BackPushContentItem content = 1;
-    repeated BackPushCondition condition = 2;
+
+message BackPushConditionConfig {
+    uint32 id = 1;
+    uint32 runTime = 2;
+    repeated BackPushConditionItem condition = 3;
 }
+
+message BackPushConditionConfigAry {
+    repeated BackPushConditionConfig ary = 1;
+}
+
 /*************召回推送(结束）************************/
