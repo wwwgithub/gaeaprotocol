@@ -409,7 +409,7 @@ message BackPushRewardConfig {
 }
 
 message BackPushRewardConfigAry {
-    repeated BackPushRewardItem ary = 1;
+    repeated BackPushRewardConfig ary = 1;
 }
 
 message BackPushContentConfig {
