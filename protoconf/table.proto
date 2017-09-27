@@ -431,7 +431,7 @@ message BackPushConditionItem {
 
 message BackPushConditionConfig {
     uint32 id = 1;
-    uint32 runTime = 2;
+    string runTime = 2;
     repeated BackPushConditionItem condition = 3;
 }
 
