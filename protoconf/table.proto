@@ -412,11 +412,18 @@ message BackPushRewardConfigAry {
     repeated BackPushRewardConfig ary = 1;
 }
 
-message BackPushContentConfig {
+
+
+message BackPushContentItem {
     string lang = 1;
     repeated string word = 2;
-    uint32 id = 3;
 }
+
+message BackPushContentConfig {
+    uint32 id = 1;
+    repeated BackPushContentItem content = 2;
+}
+
 
 message BackPushContentConfigAry {
     repeated BackPushContentConfig ary = 1;
