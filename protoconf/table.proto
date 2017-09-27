@@ -367,7 +367,6 @@ message DaZhuanPanConfigAry {
 
 
 /*************过岛奖励(开始）************************/
-
 message GoPlanetRewardItem{
     string index = 1;
     uint32 value = 2;
@@ -383,7 +382,15 @@ message GoPlanetRewardConfigAry {
 }
 /*************过岛奖励(结束）************************/
 
+/*************发送邀请奖励(开始）************************/
 
+message InviteRewardConfig{
+    string type = 1;
+    uint32 number = 2;
+    uint32 probaility = 3;
+}
 
-
-
+message InviteRewardConfigAry {
+    repeated InviteRewardConfig ary = 1;
+}
+/*************发送邀请奖励(结束）************************/
