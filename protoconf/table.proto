@@ -387,7 +387,7 @@ message GoPlanetRewardConfigAry {
 message InviteRewardConfig{
     string type = 1;
     uint32 number = 2;
-    uint32 probaility = 3;
+    uint32 probability = 3;
 }
 
 message InviteRewardConfigAry {
