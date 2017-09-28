@@ -351,6 +351,16 @@ message PlanetConfigAry {
     repeated PlanetConfig ary = 1;
 }
 
+message PlanetMaxConfig {
+    uint32 planet_max = 1;
+}
+
+
+message PlanetMaxConfigAry {
+    repeated PlanetMaxConfig ary = 1;
+}
+
+
 /*************大转盘(开始）************************/
 
 message DaZhuanPanConfig {
