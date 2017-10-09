@@ -449,14 +449,14 @@ message BackPushContentConfigAry {
 
 /*************召回推送(结束）***********************/
 message taskFinishRewardConfigAry {
-   repeated taskFinishReward ary = 1;
+   repeated taskFinishRewardConfig ary = 1;
 }
 
 message taskFinishRewardConfig {
    uint32 endTime = 1;
    uint32 beginTime = 2;
-   repeated taskExpireReward expireReward = 1;
-   repeated taskExpireReward defaultReward = 1;
+   repeated taskExpireReward expireReward = 3;
+   repeated taskExpireReward defaultReward = 4;
 }
 
 message taskExpireReward {
