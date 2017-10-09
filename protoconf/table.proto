@@ -452,7 +452,7 @@ message taskFinishRewardConfigAry {
    repeated taskFinishReward ary = 1;
 }
 
-message taskFinishReward {
+message taskFinishRewardConfig {
    uint32 endTime = 1;
    uint32 beginTime = 2;
    repeated taskExpireReward expireReward = 1;
