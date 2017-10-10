@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 
-
 message EnumItem {
     string Name = 1;
     uint32 Value = 2;
