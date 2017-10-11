@@ -448,6 +448,47 @@ message BackPushContentConfigAry {
 
 
 /*************召回推送(结束）***********************/
+
+/*************活动上下线(开始）***********************/
+
+
+message ActionContent{
+    string id = 1;
+    string name = 2;
+    uint32 stay = 3;
+    string device = 4;
+    string country = 5;
+    string img = 6;
+    string btn = 7;
+    string go = 8;
+    string tip = 9;
+    string content = 10;
+    string version = 11;
+    uint32 isTest = 12;
+    string startTime = 13;
+    string endTime = 14;
+    string platform = 15;
+    uint32 position = 16;
+    uint32 order = 17;
+    string startDate = 18;
+    string endDate = 19;
+}
+
+message ActionConfig{
+    repeated ActionContent content = 1;
+}
+
+message ActionConfigAry{
+    repeated ActionConfig ary = 1;
+}
+
+
+
+/*************活动上下线(结束）***********************/
+
+message taskFinishRewardConfigAry {
+   repeated taskFinishRewardConfig ary = 1;
+}
 message taskFinishRewardConfigAry {
    repeated taskFinishRewardConfig ary = 1;
 }
